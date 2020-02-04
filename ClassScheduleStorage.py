@@ -8,7 +8,6 @@ Each class will have an ID, a name (optional)
 
 """
 
-import StringProcessing
 
 class Schedule:
     #data structures for classes
