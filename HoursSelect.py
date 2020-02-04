@@ -10,6 +10,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.filedialog import askopenfilename
 import csv
+import pprint
 
 
 def selectHoursFile():
@@ -56,7 +57,9 @@ def interpretCSVFormat(csvFile):
             tempDict[classID] = str(classTimes)
             classID = classID + 1
         del tempDict[0]
-        print(tempDict)
+
+        pp = pprint.PrettyPrinter(indent=4)
+        pp.pprint(tempDict)
 
 
 
