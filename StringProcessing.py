@@ -30,6 +30,9 @@ input: takes in a string of class info and places the times into a list
 Goes through, picks out the items based on where the commas are, and creates a list based on the items in there
 """
 def lineList(classString):
-    lineList = list()
 
+    lineList = [x.strip() for x in classString.split(',')]
+    lineList = [x.strip("'") for x in lineList]
+
+    #print(lineList)
     return lineList

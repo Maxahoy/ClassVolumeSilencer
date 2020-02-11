@@ -25,5 +25,5 @@ import HoursSelect
 #csvFile = HoursSelect.selectHoursFile()
 
 csvFile = "/home/maxwell/maxahoy/ClassVolumeSilencer/CSV_example.csv"
-print(csvFile)
+#print(csvFile)
 HoursSelect.interpretCSVFormat(csvFile)

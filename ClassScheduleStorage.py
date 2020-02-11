@@ -55,7 +55,6 @@ class Section:
         return start, end
 
     #TODO: make it read in days that a class occurs, assuming same days every week
-
     """
     1: ['1', 'Stats', '10:20:00 AM', '', '10:20:00 AM', '', '10:20:00 AM', '', '', '11:15:00 AM', '', '11:15:00 AM', '', '11:15:00 AM']",
        

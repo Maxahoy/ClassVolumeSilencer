@@ -6,11 +6,12 @@ IDEA: import the format example file that I'm using and is saved in the same dir
 
 """
 
-from tkinter import *
-from tkinter import ttk
-from tkinter.filedialog import askopenfilename
 import csv
 import pprint
+from tkinter import *
+from tkinter.filedialog import askopenfilename
+
+import StringProcessing
 
 
 def selectHoursFile():
@@ -56,11 +57,13 @@ def interpretCSVFormat(csvFile):
             #print(row)
             tempDict[classID] = str(classTimes)
             classID = classID + 1
+
+            print(StringProcessing.lineList(str(classTimes)))
         del tempDict[0]
 
         pp = pprint.PrettyPrinter(indent=4)
-        pp.pprint(tempDict)
+        #pp.pprint(tempDict)
 
-
+    #TODO: make the sections using ClassScheduleStorage
 
 
